@@ -29,24 +29,24 @@
 <body>
     <header>
         <!-- navbarstyle -->
-        <nav class="bg-[#FFF9F4] h-[100px]">
+        <nav class="bg-[#FFF9F4] h-[100px] px-4">
             <div class="pt-7 flex justify-between items-center max-w-[1320px] mx-auto">
 
                 <div class="flex items-center gap-3">
                     <img src="c1-assets/logo-header.png" alt="">
-                    <h2 class=" font-sora text-2xl text-black">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+                    <h2 class="font-sora text-2xl text-black lg:block hidden">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
                 </div>
-                <div class=" space-x-8 text-xl text-black">
-                    <a class="font-sora" href="">Find a pet</a>
-                    <a class="font-sora" href="">Breeds</a>
-                    <a class="font-sora" href="">Contact us</a>
+                <div class="flex  space-x-8 text-xl text-black ">
+                    <a class="font-sora hidden lg:block"href="">Find a pet</a>
+                    <a class="font-sora hidden lg:block"href="">Breeds</a>
+                    <a class="font-sora hidden lg:block"href="">Contact us</a>
                 </div>
-                <div class="flex gap-3">
-                    <img src="c1-assets/Vector.svg" alt="">
-                    <img src="c1-assets/Vector (1).svg" alt="">
-                    <button class="text-xl text-black border border-[#FFDC26] px-8 py-3 rounded-lg font-sora">Login</button>
-
-                    <button class="text-xl text-black bg-[#FFDC26] px-8 py-3 rounded-lg font-sora">Register</button>
+                <div class="flex gap-3 ">
+                    <i class="fa-solid fa-bars"></i>
+                    <img class="hidden lg:block" src="c1-assets/Vector.svg" alt="">
+                    <img class="hidden lg:block" src="c1-assets/Vector (1).svg" alt="">
+                    <button class=" hidden lg:block text-xl text-black border border-[#FFDC26] px-8 py-3 rounded-lg font-sora">Login</button>
+                    <button class="hidden lg:block text-xl text-black bg-[#FFDC26] px-8 py-3 rounded-lg font-sora">Register</button>
                 </div>
             </div>
             
@@ -108,12 +108,12 @@
             <div class="max-w-[1320px] mx-auto ">
                 <!-- section-title -->
                 <h1 class="font-adlam text-4xl pt-36">Trending Pet Products</h1>
-                <div class="grid grid-cols-4 grid-rows-3 items-center gap-3 pb-[130px] pr-14">
-                    <div class="bg-[#F9DF8A] row-span-3 col-span-1 pl-8 mt-12 rounded-lg">
+                <div class="grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-3 items-center gap-3 pb-[130px] pr-14">
+                    <div class="bg-[#F9DF8A] col-span-2 lg:row-span-3 lg:col-span-1 pl-8 mt-12 lg:mb-36 rounded-lg">
                         <h1 class="font-adlam text-4xl pt-12">T- Shirt For Dogs</h1>
                         <p class="font-sora text-[16px] mt-4 mb-4">Discover a world of treats, toys, and <br> essentials handpicked for </p>
                         <button class=" font-sora bg-white py-3 px-8 text-xl rounded-lg">Shop Now</button>
-                        <img class="items-end" src="c1-assets/cute-pet-small.png" alt="">
+                        <img class="items-end " src="c1-assets/cute-pet-small.png" alt="">
                     </div>
                     <!-- start-card -->
                     <div class="flex bg-white rounded-lg py-4 pl-4 pr-20 gap-4">
@@ -192,6 +192,32 @@
                 </div>
             </div>
 
+         </section>
+         <section class="max-w-[1320px] mx-auto ">
+            <h1 class="font-adlam text-4xl mt-36">Everyday low Price</h1>
+          <div class="flex flex-col  lg:flex-row gap-6 mb-36">
+            <div class="flex w-[55%] rounded-lg  bg-gradient-to-l from-[#ACD2FD] to-[#F8CCFB] mt-12 items-center">
+                <div class="py-32 pl-20">
+                    <h4 class="font-sora">Under Price</h4>
+                    <h1 class="font-adlam text-3xl">Pet Grooming Mitt</h1>
+                    <h4 class="font-adlam text-2xl font-normal text-white">(Easy Hair Removal)</h4>
+                    <p class="font-adlam text-[56px]">$7.99</p>
+                </div>
+                <div>
+                    <img src="c1-assets/cute-dog-mid.png" alt="">
+                </div>
+               </div>
+               <!-- second card -->
+               <div class="flex w-[35%] rounded-lg bg-gradient-to-l from-[#F9DF8A] to-#FFF9F4] mt-12 ">
+                <div class="pt-14 pl-20">
+                    <h1 class="font-adlam text-3xl fontn">T-Shirt for Dogs</h1>
+                    <p class="font-adlam text-[56px] text-[#FFDC26]">$7.99</p>
+                </div>
+                <div>
+                    <img class="relative -bottom-32 " src="c1-assets/cute-pet-mid.png" alt="">
+                </div>
+               </div>
+          </div>
          </section>
     </main>
 
